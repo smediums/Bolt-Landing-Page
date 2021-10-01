@@ -1,0 +1,18 @@
+@mixin centerFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin grid($colNum) {
+    display: grid;
+    place-content: center;
+    grid-template-columns: $colNum;
+}
+
+@mixin absoluteCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,26 @@
+//768
+/* 
+3 row grid to 3 col grid
+except footer
+*/
+
+//960px
+/* 
+no hamber menu 
+single column becomes multi
+*/
+
+@mixin responsive($breakPoint) {
+    @if($breakPoint == plusPhone){
+        @media screen and (min-width: 768px) {
+            @content;
+        }
+    };
+    @if($breakPoint == tabletOrBigger){
+        @media screen and (min-width: 960px) {
+            @content;
+        };
+    };
+}
+
+//Header

@@ -1,0 +1,77 @@
+.benefits{
+    width: 100%;
+    max-width: 1200px;
+    background: #fff;
+
+    .perks{
+        @include grid(repeat(auto-fit, minmax(250px, 1fr)));
+        gap: 2.5rem;
+        padding: 2.5rem 24px;
+
+
+        .perk{
+            @include grid(1fr 2fr);
+            column-gap: 1.5rem;
+            align-self: start;
+
+            &:first-child{
+                margin-top: 2rem;
+            }
+            
+
+            div{
+                font-size: 1.5rem;
+                &:first-child{
+
+                    img{
+                        width: 70px;
+                        height: 70px;
+                        padding: 0 .2rem .2rem 0;
+                    }
+                }
+
+                &:last-child{
+                    color: $smallText;
+
+                    p{
+                        &:first-child{
+                            color: $heading;
+                            font-size: 24px;
+                            font-weight: 800;
+                        }
+
+                        &:last-child{
+                            font-size: 16px;
+                            letter-spacing: 1px;
+                            line-height: 25px;
+                            padding-top: 0.5rem;
+                        }
+                    }
+                }
+            }
+
+            i{
+                color: $brandColor;
+                font-size: 1.4rem;
+                text-align: center;
+                padding: .85rem;
+                border-radius: 50%;
+                background: $greenCircles;
+            }
+        }
+    }
+}
+
+#benefits2{
+    .perks{
+        padding: 1rem .7rem;
+
+        &:last-child{
+            margin-bottom: 2rem;
+        }
+        .perk{
+            grid-template-columns: 1fr 3fr;
+            column-gap: 0;
+        }
+    }
+}

@@ -1,0 +1,134 @@
+.footer{
+    @include grid(repeat(auto-fit, minmax(250px, 1fr)));
+    width: 100%;
+    background: $footerColor;
+    padding: 1.2rem 1.4rem;
+
+    .customerAid{
+        @include grid(1fr);
+        flex-direction: column;
+        
+        img{
+            width: 69px;
+            padding: 1.8rem 0;
+        }
+
+        .appStore{
+            @include grid(repeat(auto-fit, minmax(250px, 1fr)));
+            padding-bottom: 1rem;
+
+            img{
+                width: 135px;
+                padding: 0.1rem 0;
+            }
+        }
+
+        i{
+            font-size: 1.2rem;
+            font-weight: 500;
+            padding: 0.8rem 0;
+
+            &:last-child{
+                padding: 2.5rem 0;
+            }
+        }
+    }
+
+    .products, .aboutUs{
+        padding: 1.2rem 0;
+        color: $heading;
+        
+        h5{
+            color: $heading;
+            font-size: 1.3rem;
+            padding-bottom: 1rem;
+        }
+
+        li{
+            padding: .5rem 0;
+            margin: 1rem 0;
+            cursor: pointer;
+
+            a{
+                font-size: 15px;
+                font-weight: 300;
+                color: $heading;
+                text-transform: uppercase;
+            }
+        } 
+    }
+    
+    .socials{
+        @include centerFlex;
+        padding-bottom: 1rem;
+
+        i{
+            font-size: 1.2rem;
+            color: $heading;
+            opacity: 0.9;
+            text-align: center;
+            padding: .65rem;
+            margin: 0.5rem;
+            border-radius: 50%;
+            border: 1px solid $heading;
+
+            &:first-child{
+                padding: 0.65rem .8rem;
+            }
+
+            &:hover{
+                opacity: 1;
+                transform: scale(1.03);
+            }
+        }
+    }
+
+    .credits{
+        text-align: center;
+
+        .policy{
+            @include centerFlex;
+            flex-direction: row;
+            color: #666;
+            width: 100%;
+            font-size: 15px;
+            padding-bottom: 1.5rem;
+
+            p{
+                padding: 0 0.5rem;
+
+                &:first-child{
+                    border-right: 1px solid #666;
+                }
+
+                a{
+                    color: #666666;
+                }
+            }
+        }
+
+        .iconCredit{
+            color: #aaa;
+            margin: 0.3rem 0;
+            font-size: 12px;
+
+            a{
+                color: #333;
+                text-decoration: underline;
+            }
+        }
+
+        h5{
+            color: $heading;
+            font-size: .8rem;
+            margin: .5rem 0;
+            font-weight: normal;
+
+            a{
+                color: $brandColor;
+            }
+        }
+    }
+}
+
+    

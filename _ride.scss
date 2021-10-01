@@ -1,0 +1,61 @@
+.getRide{
+    @include centerFlex;
+    width: 100%;
+    padding: 5rem 0;
+    position: relative;
+    overflow: hidden;
+
+    .cir{
+        @include absoluteCenter;
+        border-radius: 50%;
+        background: $greenCircles;
+        z-index: -2;
+    }
+
+    .circle1{
+        width: 150px;
+        height: 150px;
+        transform: translate(70%, -150%);
+        animation: bounce 6s linear infinite;
+    }
+
+    .circle2{
+        width: 500px;
+        height: 500px;
+        transform: translate(-60%, -25%);
+    }
+
+    .container{
+        @include grid(1fr);
+        width: 90%;
+        
+        .phone{
+            text-align: center;
+
+            img{
+            width: 70%;
+            max-width: 350px;
+            }
+        }
+        
+        .text{
+            padding: 0 .5rem;
+
+            h3{
+                font-size: 35px;
+                color: $heading;
+                padding: 1rem 0;
+                line-height: 2.5rem;
+            }
+
+            p{
+                width: 90%;
+                color: $smallText;
+                font-size: 16px;
+                line-height: 26px;
+                padding-bottom: 2rem;
+            }
+        }
+        
+    }
+}

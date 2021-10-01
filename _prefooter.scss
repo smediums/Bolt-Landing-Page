@@ -1,0 +1,44 @@
+.prefooter{
+    width: 100%;
+    background-color: $brandColor;
+
+    .preContent{
+        @include centerFlex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        padding: 1.5rem 0;
+
+        h4{
+            font-size: 32px;
+            padding: 1.3rem 0 .9rem 0;
+        }
+        
+        .appStore{
+            @include centerFlex;
+            flex-direction: column;
+            text-align: center;
+            width: 100%;
+            padding: .5rem;
+
+            img{
+                max-width: 135px;
+                
+                &:first-child{
+                    margin-bottom: .3rem;
+                }
+            }
+        }
+
+        p{
+            padding: .5rem 0;
+            a{
+            color: #fff;
+            text-decoration: underline;
+        }
+        }
+
+        
+    }
+}
